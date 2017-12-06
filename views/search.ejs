@@ -1,0 +1,26 @@
+<% include ./partials/header %>
+<div class="ui container landing-header">
+    <em>
+      <div class="ui three item inverted raised menu">
+        <div class="big item"><i class="code icon"></i>Developers Jobs</div>
+        <div class="big item">Search Page</div>
+        <div class="big item"><i class="flag icon"></i>Location Jobs</div>
+      </div>
+    </em>
+  <div class="ui segments raised">
+    <div class="ui inverted form">
+      <form action ="/results" method ="GET">
+        <div class="two fields">
+          <div class="field">
+            <input type ="text" placeholder="Type of job" name ="description"></input>
+          </div>
+          <div class="field">
+            <input type ="text" placeholder="City" name ="location"></input>
+          </div>
+        </div>
+        <button type ="submit" class="ui inverted submit button big" id="search"><i class="search link icon"></i>Search</button>
+      </form>
+    </div>
+  </div>
+</div>
+<% include ./partials/footer %>

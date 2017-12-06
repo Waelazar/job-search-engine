@@ -1,0 +1,37 @@
+<% include ./partials/header %>
+<div class="ui three item inverted menu head">
+    <div class="ui container">
+        <a href="/" class="header item"><i class="search icon"></i>Search Again</a>
+        <a href="#" class="header item">Results Page</a>
+           <a href="/" class="header item"><i class="flag icon"></i>Landing Page</a>
+       </div>
+   </div>
+</div>
+<div class="ui container">
+    <div class="ui list">
+        <div class="item">
+        <% data.forEach(function(jobs){ %>
+            <div class="content">
+                    <div class="ui inverted segments gap" >
+                    <div class ="ui left aligned"><p class="paragraph"><%= jobs["title"] %></p></div> 
+                    <div class="ui right aligned"><span class="date"><%= jobs["created_at"] %></span></div>
+                    <div class="company" ><%= jobs["company"] %>  - 
+                    <i class="marker icon"></i><%= jobs["location"] %> </div>
+                    <div class="more"><span class="type"><%=jobs["type"]%> - </span><span class="view_description">View Description</span><span id="description"><%- jobs["description"] %></span> 
+                    </div>
+                    <div class ="apply"><%- jobs["how_to_apply"] %></div>
+                </div>
+            </div>
+        <% }); %>  
+        </div>
+    </div>
+</div>
+</body>
+</html>
+<script>
+    $(document).ready(function(){
+        $('.more').on('click',function(){
+            $(this).find('#description').animate({height : 'toggle'});
+        });
+    });
+</script>

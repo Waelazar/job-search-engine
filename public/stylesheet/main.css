@@ -1,0 +1,138 @@
+body
+{
+    background :url('http://cdn.wall-pix.net/albums/art-space/00024864.jpg')no-repeat center center fixed;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    -webkit-background-size: fixed;
+    -moz-background-size: fixed;
+    -o-background-size: fixed;
+    top: 0;
+}
+
+a
+{
+    text-decoration :none;
+    color:rgba(255,255,255,1) !important;
+}
+
+a:hover {
+    color: #e05d07 !important;
+    transition-duration: 0.7s;
+}
+/* ######## Search Page ######## */
+
+.landing-header{
+    z-index: 1;
+    position: relative;
+    text-align: center;
+    padding-top: 35vh;
+}
+
+#search
+{
+    width:50%;
+}
+#search:hover
+{
+    color:#e05d07;
+    transition-duration: 0.7s;
+}
+
+/* ######## Result Page ######## */
+
+.content
+{
+    margin-bottom:1em;
+}
+.left
+{
+    width:50%;
+    text-align:left;
+    font-size:18px;
+    font-weight:bold;
+    color:#e05d07;
+    margin-left: 1%;
+}
+
+.date
+{
+    font-size:15px;
+    font-weight:600;
+    color:#fff;
+    margin-right: 3%;
+}
+
+.right
+{
+    width:50%;
+    float:right;
+    text-align:right;
+}
+.paragraph
+{
+    font-size:18px;
+    font-weight:bold;
+    margin-left: 2%;
+}
+
+.company
+{
+    font-size:14px;
+    font-weight:bold;
+    color:#fff;
+    margin-left: 2%;
+}
+.more
+{
+    margin-left: 2%;
+    color:#fff;
+}
+.view_description
+{
+    font-style: italic;
+    cursor:pointer;
+}
+
+.view_description:hover
+{
+    color: #e05d07 !important;
+    transition-duration: 0.5s;
+}
+
+#description
+{
+    display :none;
+    color:white;
+}
+.apply
+{
+    font-style: italic;
+    font-weight:bold;
+    color:#fff;
+    margin-left: 2%;
+}
+
+.type
+{
+    font-style: italic;
+    font-size:16px;
+}
+/* ######## Footer section ######## */
+#footer
+{
+    text-align:center;
+    position:relative;
+    bottom:0;
+    left:0;
+    color:#fff;
+    text-decoration :none;
+}
+
+.footer
+{
+    position: fixed; 
+    bottom: 5px; 
+    left:0;
+    width:100%;
+}
