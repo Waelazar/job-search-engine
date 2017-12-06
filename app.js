@@ -7,7 +7,7 @@ app.use(express.static("public"));
 app.set("view engine", "ejs");
 
 var url = process.env.DATABASE || "mongodb://localhost/job_search_engine";
-mongoose.connect(url);
+mongoose.connect(url, {useMongoClient : true});
 
 app.get("/", function(req, res){
    res.render("search"); 
